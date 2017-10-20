@@ -1,0 +1,26 @@
+Source: golang-github-spaolacci-murmur3
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Alexandre Viau <aviau@debian.org>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any
+Standards-Version: 4.0.0
+Homepage: https://github.com/spaolacci/murmur3
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-spaolacci-murmur3.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-spaolacci-murmur3.git
+XS-Go-Import-Path: github.com/spaolacci/murmur3
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-spaolacci-murmur3-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Native MurmurHash3 Go implementation
+ murmur3 Native Go implementation of Austin Appleby's third MurmurHash
+ revision (aka MurmurHash3).
+ .
+ Reference algorithm has been slightly hacked as to support
+ the streaming mode required by Go's standard Hash interface
+ (http://golang.org/pkg/hash/#Hash).

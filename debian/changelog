@@ -1,0 +1,13 @@
+golang-github-spaolacci-murmur3 (1.0-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Bump Standards-Version to 4.0.0.
+  * Testsuite: autopkgtest-pkg-go.
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 06 Aug 2017 21:06:42 -0400
+
+golang-github-spaolacci-murmur3 (0.0~git20150829.0.0d12bf8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #865078)
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 19 Jun 2017 01:34:53 -0400
